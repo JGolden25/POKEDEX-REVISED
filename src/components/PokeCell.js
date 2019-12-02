@@ -1,5 +1,5 @@
 import React from 'react';
-import sprites from '../assets/sprites.png';
+import sprites from './assets/sprites.png';
 import './styles/PokeCell.css';
 
 const PokeCell = ({ pokeClass, handleOnClick }) => {
