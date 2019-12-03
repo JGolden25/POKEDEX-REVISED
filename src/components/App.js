@@ -3,7 +3,9 @@ import PokeList from './PokeList';
 import Pokemon from '../Pokemon';
 import DetailView from './DetailView';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './styles/App.css';
+import backgroundImage from './pattern.png';
 
 
 
@@ -27,7 +29,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ background: `url(${backgroundImage})` }}>
         <PokeList handleOnClick={this.handleOnClick}/>
         <DetailView pokemon={this.state.pokemon}/>
       </div>
